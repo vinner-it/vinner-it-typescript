@@ -1,7 +1,6 @@
 export class VinBuilder {
     static fastVin(vin: string): Vin {
-        if(/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)) return new ValidVin(vin);
-        return new InvalidVin(vin);
+        return ValidVin.createVin(vin);
     }
 }
 
@@ -14,9 +13,15 @@ export class InvalidVin {
 
 export class ValidVin {
     vin: string;
-    constructor(vin: string) {
+    private constructor(vin: string) {
         this.vin = vin;
     }
+
+    static createVin(vin: string): Vin {
+        if(/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)) return new ValidVin(vin);
+        return new InvalidVin(vin);
+    }
+
 }
 
 export type Vin = ValidVin | InvalidVin;
