@@ -1,6 +1,6 @@
 {
   "name": "vinner-it",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "The Typescript implementation of vinner-it",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,13 +8,15 @@
     "/dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "type-check": "tsc --noEmit",
+    "build": "tsc --project tsconfig.json"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinner-it/vinner-it-typescript.git"
   },
   "keywords": [
+    "iso 3779",
     "vinner",
     "typescript",
     "javascript"
@@ -25,8 +27,7 @@
     "url": "https://github.com/vinner-it/vinner-it-typescript/issues"
   },
   "homepage": "https://github.com/vinner-it/vinner-it-typescript#readme",
-  "dependencies": {
-    "tsc": "^2.0.4",
+  "devDependencies": {
     "typescript": "^5.4.5"
   }
 }
