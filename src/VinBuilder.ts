@@ -1,18 +1,21 @@
 export class VinBuilder {
-    static fastVin(vin: string) {
-        return { kind: "invalid vin", vin };
+    static fastVin(vin: string): Vin {
+        return new InvalidVin(vin);
     }
 }
 
-
-interface InvalidVin {
-    kind: "invalid vin";
+export class InvalidVin {
     vin: string;
+    constructor(vin: string) {
+        this.vin = vin;
+    }
 }
 
-interface ValidVin {
-    kind: "valid vin";
+export class ValidVin {
     vin: string;
+    constructor(vin: string) {
+        this.vin = vin;
+    }
 }
 
 export type Vin = ValidVin | InvalidVin;

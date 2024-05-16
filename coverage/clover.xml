@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1715861358555" clover="3.2.0">
-  <project timestamp="1715861358555" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="3" coveredelements="3" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
-    <file name="VinBuilder.ts" path="/Users/ydh0rs/Desktop/work/vinner-it-typescript/src/VinBuilder.ts">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+<coverage generated="1715864975232" clover="3.2.0">
+  <project timestamp="1715864975232" name="All files">
+    <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2" elements="9" coveredelements="7" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+    <file name="VinBuilder.ts" path="C:\Users\SPAZI9\Desktop\Vinner\src\VinBuilder.ts">
+      <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
     </file>
   </project>
 </coverage>
