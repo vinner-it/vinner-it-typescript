@@ -13,6 +13,8 @@
 </p>
 
 # Installation and Usage
+## Live Demo
+A live demo is available at GitHub pages, [here](https://vinner-it.github.io/vinner-it-typescript/)!
 ## Install
 ```sh
 npm install vinner-it
@@ -45,6 +47,7 @@ vin = VinBuilder.fastVin("OIQAOCAI1231AJFJAI");
   - [Compliance and Responsibility](#compliance-and-responsibility)
   - [References](#references)
   - [Examples](#examples)
+  - [GitHub pages demo](#live-demo)
 
 # Teams
 * PRODUCT team (Forsberg Christer, Oldenkamp Emiel) 
