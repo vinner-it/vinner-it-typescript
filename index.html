@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fastVin demo</title>
     <script type="module" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div>
-        <h3>Enter VIN here:</h3>
-        <input type="text" id="inputText">
-        <button id="checkButton">Check!</button>
-    </div>
-    <div>
-        <h2 id="resultText"> </h2>
+    <div
+        style="display: flex; width: fit-content; margin: 5px; background-color: #2B70D3; border-radius: 10px; padding:10px; flex-direction: column; align-items: center;">
+        <div>
+            <h1 style="color: #EDEFF3;">VIN Validator</h1>
+        </div>
+        <div style="margin-bottom: 5px;">
+            <input type="text" id="VINInput" placeholder="Enter VIN (17 characters)" style="width: 160px;">
+            <button id="ButtonOfValidation">Validate</button></div>
+        <div style="display: flex; background-color: #2058A8; border-radius: 5px; justify-content: stretch; padding: 0 19px 0 10px;">
+            <h3 style="margin-right: 5px; color: #EDEFF3">The VIN is</h3>
+            <h3 id="validity"> Invalid</h3>
+        </div>
     </div>
 </body>
+
 </html>

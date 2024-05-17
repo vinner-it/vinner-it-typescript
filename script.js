@@ -1,23 +1,23 @@
-import * as VB from "./VinBuilder.js";
+import * as VB from "./VinBuilder.js"
 
-let resultText = document.getElementById("resultText");
-let inputText = document.getElementById("inputText");
-let checkButton = document.getElementById("checkButton");
+let vinInput = document.getElementById("VINInput")
+let validateButton = document.getElementById("ButtonOfValidation")
+let resultText = document.getElementById("validity")
 
-const updateResultText = () => {
-    let vin = VB.VinBuilder.fastVin(inputText.value);
-
-    console.log(vin)
+const updateValidity = () => {
+    let vin = VB.VinBuilder.fastVin(vinInput.value);
 
     if(vin instanceof VB.ValidVin) {
-        resultText.style.color = "green";
-        resultText.innerText = "Valid vin";
+        resultText.innerText = "Valid";
+        resultText.style.color = "#B35AF2";
     }
-    else {       
-        resultText.style.color = "red";
-        resultText.innerText = "Invalid vin";
-    } 
+    else {
+        resultText.innerText = "Invalid";
+        resultText.style.color = "#E35205";
+    }
 }
 
-inputText.addEventListener("change", updateResultText);
-checkButton.addEventListener("click", updateResultText);
+updateValidity();
+
+vinInput.addEventListener("change", updateValidity);
+validateButton.addEventListener("click", updateValidity);
