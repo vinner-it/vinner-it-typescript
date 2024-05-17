@@ -1,6 +1,6 @@
 {
   "name": "vinner-it",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "The Typescript implementation of vinner-it",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
