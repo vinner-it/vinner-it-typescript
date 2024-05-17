@@ -1,4 +1,40 @@
-# VIN Validador Scania Hack 2024
+<h1 align="center"> VIN Validador Scania Hack 2024 </h1>
+<p align="center">
+  <img src="https://img.shields.io/npm/v/vinner-it.svg?orange=blue" />
+  <a href="https://www.npmjs.com/package/vinner-it">
+    <img alt="Downloads" src="https://img.shields.io/npm/dm/vinner-it.svg?color=blue" target="_blank" />
+  </a>
+  <a>
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+  </a>
+  <a>
+    <img alt="Unpacked Size" src="https://img.shields.io/npm/unpacked-size/vinner-it" target="_blank" />
+  </a>
+</p>
+
+# Installation and Usage
+## Install
+```sh
+npm install vinner-it
+```
+
+## Usage
+Vinner-it (Typescript) is used for validating VINs.\
+\
+The class VinBuilder is used for testing VINs.\
+For example:
+```ts
+let vin;
+
+// vin will be of type ValidVin
+vin = VinBuilder.fastVin("WAUZZZ4F4BN010985");
+
+// vin will be of type InvalidVin
+// It has invalid characters like "O, I and Q"
+vin = VinBuilder.fastVin("OIQAOCAI1231AJFJAI");
+```
+
+# Table of contents
 
 - [**Teams**](#teams)
 - [**VIN Standard Summary**](#vin-standard-summary)

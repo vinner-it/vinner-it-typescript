@@ -19,6 +19,8 @@
   },
   "keywords": [
     "iso 3779",
+    "VIN",
+    "Vehicle Identification Number",
     "vinner",
     "typescript",
     "javascript"
